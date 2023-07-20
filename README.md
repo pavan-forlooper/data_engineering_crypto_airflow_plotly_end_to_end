@@ -17,13 +17,21 @@ The real-time dashboard is built using Dash, a Python web application framework 
 - [Dash](https://dash.plotly.com/installation)
 
 ## The project is organized as follows:
+
 |-- dags/
+
 |   |-- get_api_key.py
+
 |   |-- get_data.py
+
 |   |-- store_data_from_finnhub_DAG.py
+
 |   |-- write_data_to_files.py
+
 |-- real_time_dashboard.py
+
 |-- requirements.txt
+
 |-- README.md
 
 
@@ -36,7 +44,7 @@ Access the Airflow web UI at http://localhost:8080, and set up the DAG named sto
 
 Make sure you have a valid Finnhub API key. You can get it by signing up at Finnhub.io.
 
-# Update the get_api_key.py script with your API key.
+## Update the get_api_key.py script with your API key.
 
 ## Running the DAG
 The DAG is scheduled to run every minute by default. You can manually trigger it from the Airflow web UI, or it will run automatically based on the schedule defined in the DAG.
