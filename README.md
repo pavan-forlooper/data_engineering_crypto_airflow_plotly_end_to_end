@@ -8,6 +8,11 @@ The data pipeline uses Apache Airflow to schedule and orchestrate the data retri
 
 The real-time dashboard is built using Dash, a Python web application framework based on Plotly. It visualizes the latest cryptocurrency prices as time-series line charts for Bitcoin (BTC/USDT), Ethereum (ETH/USDT), and Ripple (XRP/USDT). The dashboard automatically updates every two minutes to display the most recent data.
 
+
+## This is the dashboard, created using DASH
+![](https://github.com/pavan-forlooper/data_engineering_crypto_airflow_plotly_end_to_end/blob/main/dashboard.png)
+
+
 ## Getting Started
 
 ### Prerequisites
@@ -34,6 +39,9 @@ The real-time dashboard is built using Dash, a Python web application framework 
 
 |-- README.md
 
+## TASKS in DAGS
+![](https://github.com/pavan-forlooper/data_engineering_crypto_airflow_plotly_end_to_end/blob/main/dag_structure.png)
+
 
 ## Airflow DAG Setup
 Start the Airflow web server and scheduler:
@@ -50,7 +58,6 @@ Make sure you have a valid Finnhub API key. You can get it by signing up at Finn
 The DAG is scheduled to run every minute by default. You can manually trigger it from the Airflow web UI, or it will run automatically based on the schedule defined in the DAG.
 
 ## Real-Time Dashboard
-![Real time dashboard, updates every 2 mins](https://github.com/pavan-forlooper/data_engineering_crypto_airflow_plotly_end_to_end/blob/main/dag_structure.png)
 To view the real-time dashboard:
 Make sure the Airflow DAG is running and fetching data.
 Run the Dash app: python real_time_dashboard.py
