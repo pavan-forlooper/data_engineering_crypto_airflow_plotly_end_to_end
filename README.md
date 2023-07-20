@@ -17,7 +17,7 @@ The real-time dashboard is built using Dash, a Python web application framework 
 
 ### Prerequisites
 
-- Python 3.x
+- Python 3.7
 - [Apache Airflow](https://airflow.apache.org/docs/apache-airflow/stable/start/local.html)
 - [Dash](https://dash.plotly.com/installation)
 
