@@ -50,6 +50,7 @@ Make sure you have a valid Finnhub API key. You can get it by signing up at Finn
 The DAG is scheduled to run every minute by default. You can manually trigger it from the Airflow web UI, or it will run automatically based on the schedule defined in the DAG.
 
 ## Real-Time Dashboard
+![Real time dashboard, updates every 2 mins](https://github.com/pavan-forlooper/data_engineering_crypto_airflow_plotly_end_to_end/blob/main/dag_structure.png)
 To view the real-time dashboard:
 Make sure the Airflow DAG is running and fetching data.
 Run the Dash app: python real_time_dashboard.py
