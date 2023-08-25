@@ -51,8 +51,7 @@ airflow scheduler
 Access the Airflow web UI at http://localhost:8080, and set up the DAG named store_data_from_finnhub_DAG.
 
 Make sure you have a valid Finnhub API key. You can get it by signing up at Finnhub.io.
-
-## Update the get_api_key.py script with your API key.
+Update the get_api_key.py script with your API key.
 
 ## Running the DAG
 The DAG is scheduled to run every minute by default. You can manually trigger it from the Airflow web UI, or it will run automatically based on the schedule defined in the DAG.
